@@ -1,0 +1,692 @@
+/* Form CSS Definitions:
+===================================================================================================================== */
+
+/* Base Styles:
+===================================================================================================================== */
+
+form * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+form {
+  max-width: 500px;
+}
+
+fieldset  {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+div.field {
+  clear: both;
+  margin: 1rem 0 2rem;
+}
+
+div.fieldgroup-field {
+  clear: both;
+  margin: 0 0 1rem;
+}
+
+form .hide {
+  display: none;
+}
+
+/* Label Styles:
+===================================================================================================================== */
+
+form label {
+  margin-bottom: 0.5rem;
+}
+
+form label.left {
+  display: block;
+  font-weight: 500;
+}
+
+form label.right {
+  font-weight: 400;
+}
+
+form label.fieldholder-small-label {
+  display: block;
+}
+
+/* Field Styles:
+===================================================================================================================== */
+
+form input.text,
+form textarea,
+form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  color: #444;
+  padding: 10px;
+  max-width: 500px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+form div.field.dropdown select {
+  height: 46px;
+  line-height: 1.2;
+  padding: 12px 10px;
+}
+
+form div.field.dropdown > div.middleColumn {
+  position: relative;
+}
+
+form div.field.dropdown > div.middleColumn:after {
+  top: 4px;
+  right: 2px;
+  color: #aaa;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  content: "\f078";
+  position: absolute;
+  pointer-events: none;
+  font-family: 'FontAwesome';
+  background: #fff none;
+}
+
+form div.field.dropdown.nolabel > div.middleColumn:after {
+  top: 3px;
+}
+
+form div.field.dropdown.readonly > div.middleColumn:after {
+  display: none;
+}
+
+form input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.ie7 form select {
+  width: 500px;
+}
+
+form input[disabled],
+form textarea[disabled] {
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+}
+
+form textarea {
+  resize: vertical;
+  display: block;
+}
+
+form input.text:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  border-color: #139fda;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(19, 159, 218, 0.6);
+}
+
+form select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/* Radio and Checkbox Styles:
+===================================================================================================================== */
+
+form .field input[type="checkbox"],
+form .field input[type="radio"] {
+  padding: 0;
+  float: left;
+  width: 13px;
+  height: 13px;
+  margin-top: 7px;
+  margin-right: 7px;
+}
+
+form .checkbox label.right,
+form .radio label.right {
+  float: none;
+  text-align: left;
+}
+
+form .checkboxset ul,
+form .optionset ul {
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+form .checkboxset li,
+form .optionset li {
+  margin-bottom: 0.5rem;
+  list-style-type: none;
+}
+
+form .checkbox:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+form .checkboxset .middleColumn label,
+form .optionset .middleColumn label {
+  font-weight: 400;
+}
+
+/* Action Styles:
+===================================================================================================================== */
+
+.Actions {
+  font-size: 0;
+  margin-bottom: 3rem;
+}
+
+.Actions:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+a.btn,
+a.button,
+form button,
+form .ss-ui-button,
+form .Actions .action,
+form input[type="submit"],
+form input[type="button"],
+form input[type="reset"] {
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  -moz-border-radius: 0;
+  -moz-appearance: none;
+  border-radius: 0;
+  appearance: none;
+  color: #fff;
+  border: none;
+  background: #139fda;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 1.5rem 1.5rem 0 0;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: all 0.15s ease-in-out 0s;
+}
+
+a.btn:hover,
+a.btn:focus,
+a.button:hover,
+a.button:focus,
+form button:hover,
+form button:focus,
+form .ss-ui-button:hover,
+form .ss-ui-button:focus,
+form .Actions .action:hover,
+form .Actions .action:focus,
+form input[type="submit"]:hover,
+form input[type="submit"]:focus,
+form input[type="button"]:hover,
+form input[type="button"]:focus,
+form input[type="reset"]:hover,
+form input[type="reset"]:focus {
+  text-decoration: none;
+}
+
+form button[disabled],
+form button[disabled]:hover,
+form button[disabled]:focus,
+form input[type="submit"][disabled],
+form input[type="submit"][disabled]:hover,
+form input[type="submit"][disabled]:focus,
+form input[type="button"][disabled],
+form input[type="button"][disabled]:hover,
+form input[type="button"][disabled]:focus,
+form input[type="reset"][disabled]
+form input[type="reset"][disabled]:hover
+form input[type="reset"][disabled]:focus {
+  color: #eee;
+  filter: none;
+  opacity: 1;
+  background: #ccc;
+}
+
+/* Button Icon Styles:
+===================================================================================================================== */
+
+form button.icon {
+  color: transparent;
+  overflow: hidden;
+  font-size: 0 !important;
+  text-indent: 0 !important;
+  box-shadow: none !important;
+  background: transparent none;
+}
+
+form button.icon::before {
+  color: #666;
+  display: block;
+  font-family: FontAwesome;
+}
+
+form button.icon:hover,
+form button.icon:focus,
+form button.icon:active {
+  background: transparent none;
+}
+
+form button.icon:hover::before,
+form button.icon:focus::before,
+form button.icon:active::before {
+  color: #444;
+}
+
+form button.icon-16 {
+  width: 16px;
+  height: 16px;
+}
+
+form button.icon-24 {
+  width: 24px;
+  height: 24px;
+}
+
+form button.icon-16::before {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+form button.icon-24::before {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* Date Field Styles:
+===================================================================================================================== */
+
+form input.day, form input.month, form input.year {
+  width: 29%;
+  max-width: 157px;
+}
+
+form div.field span.separator {
+  color: #aaa;
+}
+
+/* Upload Field Styles:
+===================================================================================================================== */
+
+form .ss-uploadfield .middleColumn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  min-width: 0;
+  max-width: none;
+  border: 1px solid #ccc;
+  background: #fff none;
+}
+
+form .ss-uploadfield .middleColumn .clear {
+  clear: none;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-files {
+  list-style-type: none;
+}
+
+form .ss-uploadfield .middleColumn .ss-ui-button,
+form .ss-uploadfield .middleColumn .ss-ui-button > input {
+  cursor: default;
+  white-space: nowrap;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-addfile.borderTop {
+  border-top: 1px solid #ddd;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item {
+  color: #444;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item:last-child {
+  border-bottom: 0;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item-editform {
+  display: none;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-actions {
+  margin: 0;
+  float: none;
+  width: auto;
+  position: static;
+  overflow: visible;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-actions::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item-progress {
+  position: static;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item-progressbar,
+form .ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item-progressbarvalue {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item-progressbar {
+  background: #ddd none;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item-progressbarvalue {
+  background: #23B235 none;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-preview {
+  float: none;
+  width: auto;
+  height: auto;
+  background: transparent none;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-preview span {
+  width: 80px;
+  height: auto;
+  display: block;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-preview span img {
+  margin: 0 0 10px;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-preview.ss-uploadfield-dropzone {
+  display: none !important;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info {
+  max-width: 90%;
+  margin-left: 0;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-name {
+  float: none;
+  width: auto;
+  height: auto;
+  line-height: 1.6;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-name small {
+  font-size: 1.3rem;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-name > * {
+  float: none;
+  padding: 0;
+  display: block;
+  text-align: left;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-name .name {
+  float: none;
+  margin: 0;
+  max-width: 90%;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-name > b {
+  font-weight: 500;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-name .size {
+  color: #888;
+  padding: 0;
+  display: block;
+  font-size: 1.3rem;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info button,
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info .ss-ui-button {
+  font-size: 1.3rem;
+  margin: 10px 8px 0 0;
+  padding: 0.8rem 1.6rem;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-actions .ss-uploadfield-item-edit {
+  display: none;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-actions .ss-uploadfield-item-cancel {
+  top: 12px;
+  right: 8px;
+  position: absolute;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-actions .ss-uploadfield-item-cancel .icon {
+  margin: 0;
+  padding: 0;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item-cancel .icon-16 {
+  width: 24px;
+  height: 24px;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item-cancel .icon-16::before {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-actions .ss-uploadfield-item-cancel .icon::before {
+  content: "\f056";
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-status {
+  float: none;
+  max-width: none;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-status.ui-state-error-text {
+  color: #cf0000;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-status.ui-state-warning-text {
+  color: #ff9300;
+}
+
+form .ss-uploadfield .middleColumn .ss-uploadfield-files .ss-uploadfield-item .ss-uploadfield-item-info .ss-uploadfield-item-status.ui-state-success-text {
+  color: #2f9e00;
+}
+
+/* Larger than phablet */
+
+@media (min-width: 550px) {
+  
+  form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-preview {
+    float: left;
+  }
+  
+  form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-preview span img {
+    margin: 0 auto;
+  }
+  
+  form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-preview.ss-uploadfield-dropzone {
+    color: #666;
+    width: 80px;
+    height: 70px;
+    cursor: default;
+    display: block !important;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 70px;
+    background: #eee none;
+    border: 2px dashed #aaa;
+    -webkit-box-shadow: #aaa 0 0 4px 0 inset;
+    -moz-box-shadow: #aaa 0 0 4px 0 inset;
+    box-shadow: #aaa 0 0 4px 0 inset;
+  }
+  
+  form .ss-uploadfield .middleColumn .ss-uploadfield-item .ss-uploadfield-item-info {
+    max-width: 300px;
+    margin-left: 95px;
+  }
+  
+  form .ss-uploadfield .middleColumn .ss-uploadfield-item-cancel .icon-16 {
+    width: 16px;
+    height: 16px;
+  }
+  
+  form .ss-uploadfield .middleColumn .ss-uploadfield-item-cancel .icon-16::before {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  
+}
+
+/* Error Styles:
+===================================================================================================================== */
+
+:invalid {
+  box-shadow: none;
+}
+
+:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/* Message Styles:
+===================================================================================================================== */
+
+form .message {
+  color: #444;
+  padding: 0.5rem 1rem;
+  background-color: #fef4ba;
+  border: 1px solid #e8c805;
+}
+
+form .message.good {
+  border-color: #8fbe00;
+  background-color: #ecf9d0;
+}
+
+form .message.bad,
+form .message.required {
+  color: #b80000;
+  border-color: #cf0000;
+  background-color: #f9d0d0;
+}
+
+form span.message {
+  clear: left;
+  margin: 1rem 0;
+  display: block;
+  max-width: 500px;
+}
+
+/* Validation Styles:
+===================================================================================================================== */
+
+form div.field.required > label:after,
+form fieldset.field.required > legend:after {
+  color: #c80000;
+  content: '*';
+  display: inline;
+  padding-left: 4px;
+}
+
+form div.field.readonly.required > label:after,
+form fieldset.field.readonly.required > legend:after {
+  display: none;
+}
+
+form input.text.parsley-error,
+form select.parsley-error,
+form textarea.parsley-error {
+  border-color: #c80000;
+}
+
+form input.text.parsley-error:focus,
+form textarea.parsley-error:focus,
+form select.parsley-error:focus {
+  outline: 0 none;
+  border-color: #c80000;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(200, 0, 0, 0.6);
+}
+
+form input.text.parsley-success,
+form select.parsley-success,
+form textarea.parsley-success {
+  border-color: #8fbe00;
+}
+
+form input.text.parsley-success:focus,
+form textarea.parsley-success:focus,
+form select.parsley-success:focus {
+  outline: 0 none;
+  border-color: #8fbe00;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(143, 190, 0, 0.6);
+}
+
+form div.field > ul.parsley-errors-list {
+  opacity: 0;
+  padding-left: 0;
+  margin: 1rem 0 0 0;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  list-style-type: none;
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+form div.field > ul.parsley-errors-list > li:before {
+  width: 24px;
+  color: #c80000;
+  content: "\f06a";
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'FontAwesome';
+  text-align: center;
+}
+
+form div.field > ul.parsley-errors-list.filled {
+  opacity: 1;
+}
+
+/* Area Specific Styles:
+===================================================================================================================== */
+
+#ForgotPassword {
+  clear: left;
+  margin: 1em 0 0;
+  font-size: 1.5rem;
+}

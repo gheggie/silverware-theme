@@ -1,0 +1,74 @@
+/* SilverWare CSS Definitions:
+===================================================================================================================== */
+
+/* Link Styles:
+===================================================================================================================== */
+
+a.silverwarelink:hover {
+  text-decoration: none;
+}
+
+a.silverwarelink:hover > span {
+  text-decoration: underline;
+}
+
+/* Component Styles:
+===================================================================================================================== */
+
+.basecomponent {
+  clear: both;
+}
+
+/* Alignment Styles:
+===================================================================================================================== */
+
+.narrow-left {
+  text-align: left;
+}
+
+.narrow-center {
+  text-align: center;
+}
+
+.narrow-right {
+  text-align: right;
+}
+
+.narrow-justify {
+  text-align: justify;
+}
+
+/* Error Styles:
+===================================================================================================================== */
+
+.typography .error.not-found {
+  margin: 2rem 0;
+}
+
+/* Media Queries:
+===================================================================================================================== */
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+  
+  /* Alignment Styles:
+  =================================================================================================================== */
+  
+  .wide-left {
+    text-align: left;
+  }
+  
+  .wide-center {
+    text-align: center;
+  }
+  
+  .wide-right {
+    text-align: right;
+  }
+  
+  .wide-justify {
+    text-align: justify;
+  }
+  
+}

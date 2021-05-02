@@ -1,0 +1,20 @@
+{
+    "name": "silverware/theme",
+    "description": "SilverStripe theme for use with SilverWare.",
+    "type": "silverstripe-theme",
+    "homepage": "https://bitbucket.org/praxisnetau/silverware-theme",
+    "keywords": ["silverstripe", "theme", "silverware"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Colin Tucker",
+            "role": "Developer",
+            "email": "colin@praxis.net.au",
+            "homepage": "http://www.praxis.net.au"
+        }
+    ],
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": "~3.4"
+    }
+}

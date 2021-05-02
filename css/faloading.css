@@ -1,0 +1,15 @@
+/* Font-Awesome Loader CSS Definitions:
+===================================================================================================================== */
+
+.jq-fa-loading .fa-loading-modal {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.jq-fa-loading .fa-loading-content {
+  box-shadow: none;
+  background: none transparent;
+}
+  
+.jq-fa-loading .fa-loading-icon {
+  color: #444;
+}

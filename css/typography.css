@@ -1,0 +1,492 @@
+/* Typography CSS Definitions:
+===================================================================================================================== */
+
+/* Base Styles:
+===================================================================================================================== */
+
+.typography {
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Link Styles:
+===================================================================================================================== */
+
+.typography a {
+  text-decoration: none;
+}
+
+.typography a:hover {
+  text-decoration: underline;
+}
+
+.typography a.btn,
+.typography a.button {
+  color: #fff;
+}
+
+/* Formatting Styles:
+===================================================================================================================== */
+
+.typography i, .typography em {
+  font-style: italic;
+}
+
+.typography b, .typography strong {
+  font-weight: bold;
+}
+
+/* Font-Awesome Styles:
+===================================================================================================================== */
+
+.typography .fa {
+  font-style: normal;
+  font-weight: normal;
+}
+
+.typography .fa-ul {
+  margin-left: 2rem;
+  list-style-type: none;
+}
+
+.typography .fa-li {
+  top: 0;
+  left: -2.14286em;
+  line-height: 1.8;
+}
+
+/* Alignment Styles:
+===================================================================================================================== */
+
+.typography .left {
+  text-align: left;
+}
+
+.typography .center {
+  text-align: center;
+}
+
+.typography .right {
+  text-align: right;
+}
+
+/* Heading Styles (Mobile):
+===================================================================================================================== */
+
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.typography h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.typography h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+}
+
+.typography h3 {
+  font-size: 3rem;
+  line-height: 1.3;
+}
+
+.typography h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+}
+
+.typography h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.typography h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Heading Styles (larger than tablet):
+===================================================================================================================== */
+
+@media (min-width: 750px) {
+
+  .typography h1 {
+    font-size: 5.0rem;
+  }
+  
+  .typography h2  {
+    font-size: 4.2rem;
+  }
+  
+  .typography h3  {
+    font-size: 3.6rem;
+  }
+  
+  .typography h4  {
+    font-size: 3.0rem;
+  }
+  
+  .typography h5  {
+    font-size: 2.4rem;
+  }
+  
+  .typography h6  {
+    font-size: 1.5rem;
+  }
+
+}
+
+/* Paragraph Styles:
+===================================================================================================================== */
+
+.typography p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+/* Preformatted Text Styles:
+===================================================================================================================== */
+
+.typography pre {
+  clear: both;
+  overflow: auto;
+  margin: 0 0 2rem;
+  font-size: 1.5rem;
+  background: #f8f8f8;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+}
+
+/* Address Styles:
+===================================================================================================================== */
+
+.typography address {
+  display: block;
+  margin: 0 0 2rem;
+  font-style: italic;
+}
+
+/* Blockquote Styles:
+===================================================================================================================== */
+
+.typography blockquote {
+  clear: both;
+  margin: 0 1rem 2rem;
+  padding: 0 1rem;
+  border-left: 1px solid #ddd;
+}
+
+/* List Styles:
+===================================================================================================================== */
+
+.typography ul,
+.typography ol,
+.typography dl {
+  margin: 0 0 2rem 2rem;
+  padding: 0 0 0 1rem;
+}
+
+.typography ul {
+  list-style-type: square;
+}
+
+.typography li {
+  margin-bottom: 0;
+}
+
+.typography ul ul, .typography ul ol, .typography ol ol, .typography ol ul {
+  font-size: 100%;
+  margin-bottom: 0;
+}
+
+.typography dl dd {
+  margin: 0 0 1rem 2rem;
+}
+
+/* Table Styles:
+===================================================================================================================== */
+
+.typography table {
+  width: 100% !important;
+  text-align: left;
+  margin: 0 0 2rem;
+  border: 1px solid #ccc;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.typography thead td, .typography table tr.even, .typography table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.typography table td,
+.typography table th {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: 1.6;
+  vertical-align: top;
+}
+
+.typography table th {
+  font-weight: bold;
+  background-color: #eee;
+}
+
+.typography table td p,
+.typography table th p {
+  margin: 0;
+}
+
+.typography table caption {
+  color: #888;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Table Styles (jQuery Basic Table plugin):
+===================================================================================================================== */
+
+.typography table.bt thead,
+.typography table.bt tbody th {
+  display: none;
+}
+
+.typography table.bt tbody tr {
+  border-top: 1px solid #ccc;
+}
+
+.typography table.bt tbody th {
+  width: auto !important;
+}
+
+.typography table.bt tfoot th,
+.typography table.bt tfoot td,
+.typography table.bt tbody td {
+  border: none;
+  display: block;
+  vertical-align: top;
+  width: auto !important;
+  padding: 0.5rem 0.75rem;
+}
+
+.typography table.bt tfoot tr th:first-child,
+.typography table.bt tfoot tr td:first-child,
+.typography table.bt tbody tr td:first-child {
+  padding-top: 0.75rem;
+}
+
+.typography table.bt tfoot tr th:last-child,
+.typography table.bt tfoot tr td:last-child,
+.typography table.bt tbody tr td:last-child {
+  padding-bottom: 0.75rem;
+}
+
+.typography table.bt tfoot th.bt-hide,
+.typography table.bt tfoot td.bt-hide,
+.typography table.bt tbody td.bt-hide {
+  display: none;
+}
+
+.typography table.bt tfoot th:before,
+.typography table.bt tfoot td:before,
+.typography table.bt tbody td:before {
+  width: 40%;
+  font-weight: bold;
+  display: inline-block;
+  content: attr(data-th);
+}
+
+.typography table.bt tbody td span.bt-content {
+  width: 60%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+.typography div.bt-wrapper.active {
+  overflow: auto;
+  max-height: 300px;
+  margin-bottom: 2rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.typography div.bt-wrapper.active > table.bt {
+  margin: 0;
+}
+
+/* Titled Abbreviation Styles:
+===================================================================================================================== */
+
+.typography abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #444;
+}
+
+/* Horizontal Rule Styles:
+===================================================================================================================== */
+
+.typography hr {
+  clear: both;
+  height: 0;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 1px 0 0;
+  margin: 2rem 0;
+  -moz-border-top-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-bottom-colors: none;
+}
+
+/* Image Styles:
+===================================================================================================================== */
+
+.typography img {
+  border: none;
+  height: auto;
+  max-width: 100%;
+}
+
+.typography img.left {
+  float: left;
+  max-width: 50%;
+  margin: 0.5rem 2rem 1rem 0;
+}
+
+.typography img.leftAlone {
+  float: left;
+  clear: both;
+  margin: 0 100% 2rem 0;
+}
+
+.typography img.right {
+  float: right;
+  max-width: 50%;
+  margin: 0.5rem 0 1rem 2rem;
+}
+
+.typography img.center {
+  float: none;
+  clear: both;
+  display: block;
+  max-width: 100%;
+  margin: 0.5rem auto 2rem;
+}
+
+/* Code Direction Styles:
+===================================================================================================================== */
+
+.typography span.codedirection {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+/* Captioned Image Styles:
+===================================================================================================================== */
+
+.typography .captionImage {
+  max-width: 100%;
+  margin-top: 2rem;
+}
+
+.typography .captionImage img {
+  margin: 0;
+  display: block;
+}
+
+.typography .captionImage.left {
+  float: left;
+  margin: 0.5rem 2rem 0 0;
+}
+
+.typography .captionImage.right {
+  float: right;
+  margin: 0.5rem 0 0 2rem;
+}
+
+.typography .captionImage.left[style],
+.typography .captionImage.right[style] {
+  max-width: 50%;
+}
+
+.typography .captionImage.left img,
+.typography .captionImage.right img {
+  float: none;
+  width: 100%;
+  max-width: none;
+}
+
+.typography .captionImage.left p,
+.typography .captionImage.right p {
+  text-align: left;
+}
+
+.typography .captionImage.leftAlone {
+  float: none;
+  margin: 2rem 0 0;
+}
+
+.typography .captionImage.leftAlone img.leftAlone {
+  float: none;
+}
+
+.typography .captionImage.center {
+  margin: 2rem auto 0;
+}
+
+.typography .captionImage p {
+  clear: both;
+  color: #888;
+  margin: 1rem 0 2rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* Responsive Video Styles:
+===================================================================================================================== */
+
+.typography .video {
+  height: 0;
+  display: block;
+  position: relative;
+  padding-bottom: 56.25%; /* Default 16:9 AR */
+  margin: 0 0 2rem;
+}
+
+.typography .video iframe {
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+
+/* Error Styles:
+===================================================================================================================== */
+
+.typography .error {
+  color: #b80000;
+  margin: 0 0 2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #cf0000;
+  background-color: #f9d0d0;
+}
+
+.typography .error > p {
+  margin: 0;
+}

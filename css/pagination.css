@@ -1,0 +1,56 @@
+/* Pagination CSS Definitions:
+===================================================================================================================== */
+
+.pagination {
+  clear: both;
+  cursor: default;
+  margin: 3rem 0;
+}
+
+.pagination ul {
+  margin: 0;
+  padding: 0;
+  list-style: outside none none;
+}
+
+.pagination ul > li,
+.pagination ul > li > a {
+  color: #666;
+  min-width: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination ul > li.more,
+.pagination ul > li.summary {
+  cursor: default;
+}
+
+.pagination ul > li > a:hover {
+  text-decoration: none;
+  background-color: rgba(220, 220, 220, 0.5);
+}
+
+.pagination ul > li.prev > a > span,
+.pagination ul > li.next > a > span
+{
+  display: none;
+}
+
+.pagination ul > li.more {
+  color: #aaa;
+}
+
+.pagination ul > li.current {
+  color: #fff;
+  font-weight: bold;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+
+.pagination ul > li.summary {
+  padding-left: 1rem;
+}
